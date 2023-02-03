@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class Numero3Activity extends AppCompatActivity {
-
     EditText txt_message;
     Button btn_reverse;
     TextView tv_result;

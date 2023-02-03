@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Numero4Activity">
+
+    <TextView
+        android:id="@+id/numero4_tv_titre1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Amount ($)"
+        android:textColor="@color/purple_700"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/numero4_txt_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/numero4_tv_titre1"
+        app:layout_constraintStart_toStartOf="@+id/numero4_tv_titre1"
+        app:layout_constraintTop_toBottomOf="@+id/numero4_tv_titre1" />
+
+    <TextView
+        android:id="@+id/numero4_tv_titre2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Tip (%)"
+        android:textColor="@color/purple_700"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numero4_txt_amount" />
+
+    <EditText
+        android:id="@+id/numero4_txt_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/numero4_tv_titre2"
+        app:layout_constraintStart_toStartOf="@+id/numero4_tv_titre2"
+        app:layout_constraintTop_toBottomOf="@+id/numero4_tv_titre2" />
+
+    <Button
+        android:id="@+id/numero4_btn_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:onClick="clickCalculate"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/numero4_txt_tip"
+        app:layout_constraintStart_toStartOf="@+id/numero4_txt_tip"
+        app:layout_constraintTop_toBottomOf="@+id/numero4_txt_tip" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
